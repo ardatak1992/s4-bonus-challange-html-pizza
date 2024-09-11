@@ -16,7 +16,13 @@
 
 a {
   text-decoration: none;
+  color:white
 }
+
+li {
+  list-style: none;
+}
+
 
 .wrapper {
   overflow-x: hidden;
@@ -39,12 +45,10 @@ main {
 
 .btn {
   cursor: pointer;
-
   border-radius: 30px;
   border: none;
   font-weight: bold;
   transition: scale 0.4s;
-
 }
 
 .btn-yellow {
@@ -112,24 +116,20 @@ nav {
   display: flex;
   background-color: #fff;
   justify-content: center;
-  
-  
 }
 
-.nav-list{
+.nav-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
   justify-content: space-between;
 }
 
-
-
 nav a,
 .menu-selectors a {
   display: flex;
   align-items: center;
-  
+
   justify-content: flex-start;
   gap: 1rem;
   text-decoration: none;
@@ -138,19 +138,18 @@ nav a,
   background-color: white;
   border-radius: 30px;
   padding: 1rem;
-  transition:color 0.4s, scale 0.4s, border 0.4s;
+  transition: color 0.4s, scale 0.4s, border 0.4s;
   border: 2px solid white;
 }
 
-nav a:hover{
+nav a:hover {
   scale: 1.02;
-  color:var(--red)
+  color: var(--red);
 }
 
-.menu-selectors a:hover{
-  border:2px solid var(--dark-gray);
+.menu-selectors a:hover {
+  border: 2px solid var(--dark-gray);
 }
-
 
 /* Cards Section */
 
@@ -169,7 +168,7 @@ nav a:hover{
 
 .card {
   border-radius: 20px;
-  height: 300px
+  height: 300px;
 }
 
 .card-text {
@@ -289,6 +288,7 @@ a.active {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  max-width: 1200px;
   overflow: hidden;
 }
 
@@ -303,7 +303,7 @@ a.active {
   transition: scale 0.5s;
 }
 
-.item-card:hover{
+.item-card:hover {
   scale: 1.02;
 }
 
@@ -328,8 +328,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid white;
-
   margin-top: 2rem;
   background-color: var(--dark-gray);
   padding: 2rem;
@@ -360,6 +358,15 @@ footer h5 {
   gap: 2rem;
   width: 300px;
 }
+
+address li{
+    margin: 1rem 0;
+    align-items: center;
+    display: flex;
+    
+    gap : 2rem;
+}
+
 
 .footer-logo {
   width: 150px;
@@ -407,11 +414,13 @@ hr {
   color: white;
 }
 
-
-
 @media (min-width: 920px) {
-  .nav-list{
+  .nav-list {
     display: flex;
+  }
+
+  #hero{
+    height: 70vh;
   }
 
   .item-cards {
@@ -423,8 +432,8 @@ hr {
     width: 50%;
   }
 
-  #cards{
-    margin-top: -5rem ;
+  #cards {
+    margin-top: -5rem;
   }
 
   .card-container {
@@ -432,15 +441,14 @@ hr {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .card{
+  .card {
     width: 100%;
-    
   }
 
-  nav{
+  nav {
     display: flex;
     justify-content: center;
-    gap:1rem;
+    gap: 1rem;
   }
 
   .card:first-child {
@@ -458,16 +466,14 @@ hr {
     grid-row: 2;
   }
 
-  #menu > .menu-selectors{
+  #menu > .menu-selectors {
     display: flex;
   }
 
-
-  @media (min-width:920px) and (max-width:1200px) {
-    #menu > .menu-selectors{
+  @media (min-width: 920px) and (max-width: 1200px) {
+    #menu > .menu-selectors {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      
     }
   }
 }
